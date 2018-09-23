@@ -3,10 +3,15 @@
 # Compile and Load I2S Module:
 
 cd /root
+
 /usr/bin/rpi-update
+
 cp /boot/config.txt /boot/config.txt.bkp
+
 cp /etc/modules /etc/modules.bkp
+
 /bin/sed -i 's/#dtparam=i2s=on/dtparam=i2s=on/' /boot/config.txt
+
 echo "snd-bcm2835" >> /etc/modules
 wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
 chmod +x /usr/bin/rpi-source
