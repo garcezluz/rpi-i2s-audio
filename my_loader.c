@@ -10,7 +10,7 @@
  *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  YOUR NAME (), 
+ *         Author:  Paul Creaser https://github.com/PaulCreaser/rpi-i2s-audio: YOUR NAME (), 
  *   Organization:  
  *
  * =====================================================================================
@@ -69,7 +69,7 @@ pr_alert("request module load '%s': %d\n",dmaengine, ret);
 ret = platform_device_register(&snd_rpi_simple_card_device);
 pr_alert("register platform device '%s': %d\n",snd_rpi_simple_card_device.name, ret);
 
-pr_alert("Hello World :)\n");
+pr_alert("I2S Microfone - MTD/MIC - Online :)\n");
 return 0;
 }
 
