@@ -76,7 +76,7 @@ return 0;
 void hello_exit(void)
 {// you'll have to sudo modprobe -r the card & codec drivers manually (first?)
 platform_device_unregister(&snd_rpi_simple_card_device);
-pr_alert("Goodbye World!\n");
+pr_alert("Leaving Loading I2S MTD/MIC!\n");
 }
 module_init(hello_init);
 module_exit(hello_exit);
